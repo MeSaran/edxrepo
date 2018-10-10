@@ -1,0 +1,16 @@
+<html>
+	<head>
+		<title>My Web Page</title>
+	<style>
+		body{
+			text-align: center;
+			margin: 20px 10px;
+		}
+	</style>	
+	</head>
+	<body>
+		{% for note in tweets %}
+			<li>{{ note.text }}</li>
+		{% endfor %}
+	</body>
+</html>
